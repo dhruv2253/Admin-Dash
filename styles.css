@@ -41,9 +41,8 @@
 
 .main {
     display: grid;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+    grid-template-columns: 2fr 1fr;
     background-color: red;
-    height: 400px;
     
 }
 
@@ -70,4 +69,19 @@
 
 .account{
     margin-right: 10px;
+}
+
+.project {
+    height: 200px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-column: 1 / 2;
+    gap: 5px;
+    padding: 5px;
 }
